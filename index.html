@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#063d19">
+<meta name="description" content="New Juice Corner — Fresh juices, shakes and milkshakes at Station Chowk, Bettiah, West Champaran.">
+<title>New Juice Corner — Sip Health, Sip Happiness</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap');
+:root{--green:#07551d;--lime:#74b900;--orange:#ff6a00;--cream:#fffaf0;--dark:#102116;--muted:#657268;--white:#fff;--line:#e8eee7;--shadow:0 24px 70px rgba(7,55,20,.13)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--dark);font-family:"DM Sans",system-ui,sans-serif;line-height:1.55}a{text-decoration:none;color:inherit}img{max-width:100%;display:block}.wrap{width:min(1180px,92%);margin:auto}
+.announcement{background:#062f14;color:#fff;text-align:center;font-size:12px;letter-spacing:.4px;padding:9px;font-weight:700}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(16px);border-bottom:1px solid #e6ebe5}.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:9px;color:var(--green);font-weight:900}.brand img{height:58px;width:58px;object-fit:contain}.brand span{font-size:18px}.links{display:flex;gap:27px;font-weight:800;font-size:14px}.links a:hover{color:var(--orange)}.navBtn{background:var(--green);color:#fff;padding:11px 17px;border-radius:99px;font-weight:800}
+.hero{position:relative;overflow:hidden;background:#f5faef;padding:65px 0 85px}.hero:before{content:"";position:absolute;width:500px;height:500px;border-radius:50%;background:#9ad72c22;right:-180px;top:-160px}.heroGrid{position:relative;display:grid;grid-template-columns:1fr 1.03fr;align-items:center;gap:55px}.kicker{display:inline-flex;align-items:center;gap:7px;background:#e6f3d8;color:var(--green);padding:8px 13px;border-radius:99px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:1px}.hero h1{font-family:"Playfair Display",serif;font-size:clamp(47px,6.3vw,82px);line-height:.96;letter-spacing:-2px;margin:18px 0}.hero h1 em{font-style:normal;color:var(--orange)}.hero p{color:var(--muted);font-size:18px;max-width:580px}.cta{display:flex;flex-wrap:wrap;gap:11px;margin-top:27px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 19px;border-radius:99px;font-weight:900;border:1px solid transparent}.btnGreen{background:var(--green);color:#fff}.btnOrange{background:var(--orange);color:#fff}.btnWhite{background:#fff;border-color:#dbe5d9;color:var(--green)}.heroVisual{position:relative}.heroVisual>img{height:560px;width:100%;object-fit:cover;border-radius:38px;box-shadow:var(--shadow)}.stamp{position:absolute;right:-20px;top:24px;background:var(--orange);color:#fff;border-radius:50%;width:115px;height:115px;display:grid;place-items:center;text-align:center;font-size:13px;font-weight:900;transform:rotate(8deg);box-shadow:0 12px 30px #ff6a0040}.heroBadge{position:absolute;bottom:24px;left:-22px;background:#fff;padding:16px 20px;border-radius:18px;box-shadow:var(--shadow);font-weight:900}.heroBadge small{display:block;color:var(--muted);font-weight:600}
+section{padding:86px 0}.heading{text-align:center;max-width:720px;margin:0 auto 42px}.eyebrow{color:var(--orange);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:2px}.heading h2{font-family:"Playfair Display",serif;font-size:clamp(34px,4.5vw,56px);line-height:1.02;margin:9px 0 13px}.heading p{color:var(--muted)}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.benefit{background:#fff;border:1px solid var(--line);padding:28px;border-radius:26px;box-shadow:0 10px 35px #07551d08}.num{font-family:"Playfair Display",serif;font-size:38px;color:#c7d7c6}.benefit h3{margin:4px 0 7px;font-size:20px}.benefit p{color:var(--muted);margin:0}
+.menuSection{background:#fff}.menuTop{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:30px}.menuTop h2{text-align:left;margin-bottom:0}.menuTop p{color:var(--muted)}.menuGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.food{border:1px solid var(--line);border-radius:25px;overflow:hidden;background:#fff;transition:.2s}.food:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.foodImg{height:220px;object-fit:cover;width:100%}.foodBody{padding:18px}.foodBody h3{margin:0 0 5px;font-size:20px}.foodBody p{margin:0;color:var(--muted);font-size:14px}.pill{display:inline-block;margin-top:12px;padding:5px 9px;background:#f0f7e8;color:var(--green);border-radius:99px;font-size:11px;font-weight:900}.emojiBox{height:220px;display:grid;place-items:center;font-size:75px;background:linear-gradient(135deg,#f4f9e9,#fff1e5)}
+.story{background:linear-gradient(135deg,#fff8ec,#f2f8ec)}.storyGrid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.storyPic{position:relative}.storyPic img{height:560px;width:100%;object-fit:cover;border-radius:34px;box-shadow:var(--shadow)}.storyCard{position:absolute;bottom:22px;right:-20px;background:#fff;border-radius:18px;padding:17px 20px;box-shadow:var(--shadow)}.storyText h2{font-family:"Playfair Display",serif;font-size:clamp(35px,4vw,56px);line-height:1.02;margin:9px 0 15px}.storyText>p{color:var(--muted);font-size:17px}.checks{display:grid;gap:13px;margin:24px 0}.check{display:flex;gap:10px}.check b{color:var(--green)}
+.gallery{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.gallery img{width:100%;height:250px;object-fit:cover;border-radius:24px}.gallery .main{height:518px;grid-row:span 2}
+.google{background:var(--green);color:#fff}.googleGrid{display:grid;grid-template-columns:1fr .9fr;gap:35px;align-items:center}.google h2{font-family:"Playfair Display",serif;font-size:clamp(38px,4.5vw,58px);line-height:1.02;margin:8px 0}.google p{color:#d8eadb}.reviewCard{background:#fff;color:var(--dark);border-radius:28px;padding:27px;box-shadow:var(--shadow)}.stars{color:#f3a500;font-size:21px;letter-spacing:2px}.reviewCard p{color:var(--muted);font-size:16px}.profileBtn{display:inline-flex;background:#fff;color:var(--green);padding:12px 18px;border-radius:99px;font-weight:900}
+.visit{background:#fff}.visitGrid{display:grid;grid-template-columns:1fr 1fr;gap:25px}.info{background:#f4f8f1;border-radius:28px;padding:30px}.row{display:flex;gap:13px;padding:15px 0;border-bottom:1px solid #dde8dc}.row:last-child{border:0}.row i{font-style:normal;font-size:23px}.mapbox{min-height:100%;background:linear-gradient(135deg,#e7f4df,#fff0e2);border-radius:28px;padding:35px;display:flex;flex-direction:column;justify-content:center}.mapbox h3{font-family:"Playfair Display",serif;font-size:34px;margin:0 0 8px}.mapbox p{color:var(--muted)}
+footer{background:#042e12;color:#d7e8d9;padding:30px 0 100px}.foot{display:flex;justify-content:space-between;gap:20px}
+.mobileBar{display:none}
+@media(max-width:900px){.links{display:none}.heroGrid,.storyGrid,.googleGrid,.visitGrid{grid-template-columns:1fr}.heroVisual{order:-1}.heroVisual>img{height:390px}.stamp{right:10px}.heroBadge{left:12px}.trio{grid-template-columns:1fr}.menuGrid{grid-template-columns:repeat(2,1fr)}.storyPic img{height:400px}.gallery{grid-template-columns:1fr 1fr}.gallery .main{height:360px}.menuTop{display:block}.menuTop p{margin-top:10px}}
+@media(max-width:560px){.announcement{font-size:11px}.nav{height:66px}.brand img{width:48px;height:48px}.brand span{font-size:15px}.navBtn{padding:9px 12px;font-size:12px}.hero{padding:35px 0 55px}.hero h1{letter-spacing:-1px}.hero p{font-size:16px}.heroVisual>img{height:300px;border-radius:25px}.stamp{width:88px;height:88px;font-size:10px}.heroBadge{bottom:10px}.menuGrid{grid-template-columns:1fr}.foodImg,.emojiBox{height:205px}.storyPic img{height:330px}.storyCard{right:8px}.gallery{grid-template-columns:1fr}.gallery .main{height:300px}.gallery img{height:210px}.mobileBar{position:fixed;display:grid;grid-template-columns:repeat(3,1fr);left:0;right:0;bottom:0;z-index:100;box-shadow:0 -8px 28px #0002}.mobileBar a{background:var(--green);color:#fff;text-align:center;padding:10px 2px;font-weight:900;font-size:12px}.mobileBar a:nth-child(2){background:var(--orange)}.mobileBar a:nth-child(3){background:#236d31}.foot{flex-direction:column;text-align:center}}
+
+/* USER FRIENDLY + ATTRACTIVE HOVER */
+html{scroll-padding-top:90px}
+.links a{position:relative;padding:10px 2px;transition:.2s}
+.links a:after{content:"";position:absolute;left:0;right:100%;bottom:2px;height:2px;background:var(--orange);transition:right .25s;border-radius:8px}
+.links a:hover{color:var(--orange);transform:translateY(-2px)}
+.links a:hover:after{right:0}
+.btn,.navBtn,.profileBtn{transition:transform .2s,box-shadow .2s,filter .2s}
+.btn:hover,.navBtn:hover,.profileBtn:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(7,55,20,.17);filter:saturate(1.08)}
+.btn:active,.navBtn:active,.profileBtn:active{transform:scale(.98)}
+.benefit,.food,.reviewCard,.info,.mapbox{transition:transform .25s,box-shadow .25s,border-color .25s}
+.benefit:hover,.food:hover,.reviewCard:hover,.info:hover,.mapbox:hover{transform:translateY(-7px);box-shadow:0 22px 50px rgba(7,55,20,.14);border-color:#cfe2cc}
+.food{cursor:pointer}
+.food img{transition:transform .45s,filter .35s}
+.food:hover img{transform:scale(1.055);filter:saturate(1.08)}
+.emojiBox{transition:transform .35s,filter .35s}
+.food:hover .emojiBox{transform:scale(1.015);filter:saturate(1.12)}
+.heroVisual>img,.storyPic img,.gallery img{transition:transform .5s,filter .35s}
+.heroVisual:hover>img,.storyPic:hover img,.gallery img:hover{transform:scale(1.018);filter:saturate(1.05)}
+.gallery img{cursor:pointer}
+.heroVisual:hover .stamp{transform:rotate(8deg) scale(1.07)}
+.heroVisual:hover .heroBadge{transform:translateY(-5px)}
+.storyPic:hover .storyCard{transform:translateY(-5px)}
+.btn,.navBtn,.profileBtn,.mobileBar a{-webkit-tap-highlight-color:transparent}
+:focus-visible{outline:3px solid #ff9b58;outline-offset:3px}
+.backTop{position:fixed;right:20px;bottom:22px;width:44px;height:44px;border:0;border-radius:50%;background:var(--green);color:#fff;font-size:20px;font-weight:900;display:grid;place-items:center;z-index:90;box-shadow:0 10px 28px #0003;opacity:0;pointer-events:none;transform:translateY(12px);transition:.25s;cursor:pointer}
+.backTop.show{opacity:1;pointer-events:auto;transform:none}
+.toast{position:fixed;left:50%;bottom:85px;transform:translate(-50%,20px);background:#082f14;color:#fff;padding:12px 17px;border-radius:999px;font-size:13px;font-weight:800;box-shadow:0 12px 30px #0003;opacity:0;pointer-events:none;z-index:120;transition:.3s}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:560px){.btn,.navBtn,.profileBtn{min-height:46px}.backTop{right:14px;bottom:82px}.toast{bottom:78px;max-width:90%;text-align:center}.heroVisual:hover>img,.storyPic:hover img,.gallery img:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="nav">
+<a class="brand" href="#home"><img src="logo.png" alt="New Juice Corner logo"><span>New Juice Corner</span></a>
+<div class="links"><a href="#menu">Menu</a><a href="#story">About</a><a href="#gallery">Gallery</a><a href="#visit">Location</a></div>
+<a class="navBtn" href="tel:+916205759307">📞 Call Now</a>
+</div></div></header>
+
+<main id="home">
+<section class="hero"><div class="wrap heroGrid"><div>
+<div class="kicker">🌿 100% Natural · Fresh & Hygienic</div>
+<h1>Fresh juice.<br><em>Fresh life.</em></h1>
+<p><b>Har Sip Mein Health, Har Din Mein Freshness!</b><br>Fresh fruit juices, shakes and refreshing drinks — served with a smile at New Juice Corner.</p>
+<div class="cta"><a class="btn btnGreen" href="#menu">🥤 Explore Menu</a><a class="btn btnOrange" target="_blank" href="https://wa.me/916205759307?text=Hello%20New%20Juice%20Corner">💬 WhatsApp Us</a></div>
+</div><div class="heroVisual"><img src="shop.png" alt="New Juice Corner shop and dine-in area"><div class="stamp">FRESH<br>EVERY<br>SIP 🍊</div><div class="heroBadge">❤️ Sip Health, Sip Happiness<small>Fresh · Natural · Energizing</small></div></div></div></section>
+
+<section><div class="wrap"><div class="heading"><div class="eyebrow">The New Juice Corner way</div><h2>Simple ingredients. Big refreshment.</h2><p>Made for people who love fresh flavours and a good place to relax.</p></div>
+<div class="trio"><div class="benefit"><div class="num">01</div><h3>Fresh Fruits</h3><p>Refreshing fruit-based drinks prepared for great taste.</p></div><div class="benefit"><div class="num">02</div><h3>Clean & Hygienic</h3><p>A neat preparation area and comfortable dine-in space.</p></div><div class="benefit"><div class="num">03</div><h3>Made to Refresh</h3><p>Perfect for a quick break, family visit or takeaway.</p></div></div></div></section>
+
+<section class="menuSection" id="menu"><div class="wrap"><div class="menuTop"><div><div class="eyebrow">Our favourites</div><h2>Pick your perfect sip</h2></div><p>Ask at the counter for today's available fruits & flavours.</p></div>
+<div class="menuGrid">
+<article class="food"><img class="foodImg" src="mosambi.png" alt="Mosambi juice"><div class="foodBody"><h3>🍋 Mosambi Juice</h3><p>Fresh, citrusy & refreshing.</p><span class="pill">FRESH PICK</span></div></article>
+<article class="food"><img class="foodImg" src="anar.png" alt="Anar juice"><div class="foodBody"><h3>❤️ Anar Juice</h3><p>Rich, fruity & refreshing.</p><span class="pill">FAVOURITE</span></div></article>
+<article class="food"><div class="emojiBox">🍊</div><div class="foodBody"><h3>Orange Juice</h3><p>Bright, juicy & refreshing.</p><span class="pill">FRESH</span></div></article>
+<article class="food"><div class="emojiBox">🍉</div><div class="foodBody"><h3>Watermelon Juice</h3><p>Cool & perfect for a fresh break.</p><span class="pill">REFRESHING</span></div></article>
+<article class="food"><div class="emojiBox">🍌</div><div class="foodBody"><h3>Banana Shake</h3><p>Creamy, filling & delicious.</p><span class="pill">SHAKE</span></div></article>
+<article class="food"><div class="emojiBox">🍪</div><div class="foodBody"><h3>Oreo Shake</h3><p>Creamy chocolate-cookie favourite.</p><span class="pill">SHAKE</span></div></article>
+</div></div></section>
+
+<section class="story" id="story"><div class="wrap storyGrid"><div class="storyPic"><img src="shop.png" alt="New Juice Corner interior"><div class="storyCard"><b>100% Fresh Vibes 🌿</b><br><small>Enjoy dine-in or takeaway</small></div></div><div class="storyText"><div class="eyebrow">About us</div><h2>Come for the juice. Stay for the vibe.</h2><p>New Juice Corner is your local stop at Station Chowk for fresh juices, shakes and refreshing drinks. Sit back, enjoy your drink and make your break a little fresher.</p>
+<div class="checks"><div class="check">✅ <span><b>Freshly prepared</b><br>Refreshing drinks made for your visit.</span></div><div class="check">✅ <span><b>Dine-in & Takeaway</b><br>Enjoy here or take your favourite sip along.</span></div><div class="check">✅ <span><b>Friendly local spot</b><br>A comfortable place to meet and relax.</span></div></div>
+<a class="btn btnGreen" target="_blank" href="https://share.google/vxbkRDHxS7a2CbZ8k">⭐ View Google Profile</a></div></div></section>
+
+<section id="gallery"><div class="wrap"><div class="heading"><div class="eyebrow">Inside New Juice Corner</div><h2>Freshness looks good on us.</h2><p>Take a look at our shop and fresh drinks.</p></div><div class="gallery"><img class="main" src="shop.png" alt="New Juice Corner storefront"><img src="mosambi.png" alt="Mosambi juice"><img src="anar.png" alt="Anar juice"></div></div></section>
+
+<section class="visit" id="visit"><div class="wrap"><div class="heading"><div class="eyebrow">Find us</div><h2>Come say hello.</h2><p>We're ready when you need a fresh break.</p></div><div class="visitGrid"><div class="info"><div class="row"><i>📍</i><div><b>Address</b><br>Station Chowk, Bettiah, West Champaran</div></div><div class="row"><i>📞</i><div><b>Phone</b><br><a href="tel:+916205759307">6205759307</a></div></div><div class="row"><i>💬</i><div><b>WhatsApp</b><br>Message us for menu & information</div></div><div class="cta"><a class="btn btnGreen" href="tel:+916205759307">📞 Call</a><a class="btn btnOrange" target="_blank" href="https://wa.me/916205759307?text=Hello%20New%20Juice%20Corner">💬 WhatsApp</a><a class="btn btnWhite" target="_blank" href="https://share.google/vxbkRDHxS7a2CbZ8k">📍 Google Location</a></div></div>
+<div class="mapbox"><div style="font-size:52px">📍</div><h3>Station Chowk</h3><p>Bettiah, West Champaran</p><a class="btn btnGreen" target="_blank" href="https://share.google/vxbkRDHxS7a2CbZ8k">Open Google Maps / Profile →</a></div></div></div></section>
+</main>
+<footer><div class="wrap foot"><div>© 2026 <b>New Juice Corner</b> · Sip Health, Sip Happiness.</div><div>Fresh Juice · Fresh Life 🍹</div></div></footer>
+<div class="mobileBar"><a href="tel:+916205759307">📞<br>Call</a><a target="_blank" href="https://wa.me/916205759307?text=Hello%20New%20Juice%20Corner">💬<br>WhatsApp</a><a target="_blank" href="https://share.google/vxbkRDHxS7a2CbZ8k">📍<br>Directions</a></div>
+
+<button class="backTop" id="backTop" aria-label="Back to top">↑</button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+const bt=document.getElementById('backTop'),toast=document.getElementById('toast');let tt;
+addEventListener('scroll',()=>bt.classList.toggle('show',scrollY>450),{passive:true});
+bt.onclick=()=>scrollTo({top:0,behavior:'smooth'});
+function msg(t){clearTimeout(tt);toast.textContent=t;toast.classList.add('show');tt=setTimeout(()=>toast.classList.remove('show'),1600)}
+document.querySelectorAll('a[href^="tel:"]').forEach(a=>a.onclick=()=>msg('Opening your phone app…'));
+document.querySelectorAll('a[href*="wa.me"]').forEach(a=>a.onclick=()=>msg('Opening WhatsApp…'));
+</script>
+</body></html>
